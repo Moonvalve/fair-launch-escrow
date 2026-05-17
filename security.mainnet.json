@@ -1,0 +1,18 @@
+{
+  "name": "Moonvalve Fair-Launch Escrow",
+  "description": "Trustless SOL escrow for fair-launch token sales on Solana mainnet.",
+  "project_url": "https://moonvalve.fun",
+  "contacts": [
+    "email:security@moonvalve.fun"
+  ],
+  "policy": "https://moonvalve.fun/privacy",
+  "preferred_languages": [
+    "en"
+  ],
+  "source_code": "https://github.com/moonvalve/fair-launch-escrow",
+  "auditors": [
+    "Cellenseres"
+  ],
+  "expiry": "2027-05-16",
+  "version": "1.0.0"
+}

@@ -1,0 +1,43 @@
+[package]
+name = "moonvalve-fair-launch-escrow"
+version = "0.1.0"
+description = "Moonvalve Fair-Launch Escrow — trustless SOL escrow for fair-launch token sales on Solana"
+homepage = "https://moonvalve.fun"
+repository = "https://github.com/moonvalve/fair-launch-escrow"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "fair_launch_escrow"
+
+[features]
+default = []
+no-entrypoint = []
+cpi = ["no-entrypoint"]
+devnet  = []   # cargo build-sbf --features devnet
+mainnet = []   # cargo build-sbf --features mainnet
+
+[dependencies]
+pinocchio        = "0.9"
+pinocchio-system = "0.4"
+pinocchio-pubkey = "0.3"
+
+[workspace]
+resolver = "2"
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+debug = 0
+
+[profile.release.build-override]
+opt-level = 3
+incremental = false
+codegen-units = 1
+
+[workspace.metadata.cli]
+solana = "3.1.14"

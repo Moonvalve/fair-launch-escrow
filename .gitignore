@@ -1,0 +1,12 @@
+/target/
+/.anchor/
+/.DS_Store
+*.log
+*.keypair
+*.pem
+*.seed
+id.json
+*keypair*.json
+*authority*.json
+*program-id*.json
+vanityAddressesSolana.txt
