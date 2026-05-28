@@ -21,6 +21,7 @@ mainnet = []   # cargo build-sbf --features mainnet
 pinocchio        = "0.9"
 pinocchio-system = "0.4"
 pinocchio-pubkey = "0.3"
+security-txt     = "1"
 
 [workspace]
 resolver = "2"

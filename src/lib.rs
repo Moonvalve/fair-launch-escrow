@@ -26,6 +26,16 @@ use pinocchio::{
 };
 use pinocchio_pubkey::pubkey;
 use pinocchio_system::instructions::CreateAccount;
+use security_txt::security_txt;
+
+#[cfg(not(feature = "no-entrypoint"))]
+security_txt! {
+    name: "MoonValve",
+    project_url: "https://moonvalve.fun",
+    contacts: "email:security@moonvalve.fun",
+    policy: "https://moonvalve.fun/policy",
+    preferred_languages: "en"
+}
 
 pub mod errors;
 pub mod events;
