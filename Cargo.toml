@@ -18,10 +18,10 @@ devnet  = []   # cargo build-sbf --features devnet
 mainnet = []   # cargo build-sbf --features mainnet
 
 [dependencies]
-pinocchio        = "0.9"
-pinocchio-system = "0.4"
-pinocchio-pubkey = "0.3"
-security-txt     = "1"
+pinocchio            = "0.9"
+pinocchio-system     = "0.4"
+pinocchio-pubkey     = "0.3"
+solana-security-txt  = "1"
 
 [workspace]
 resolver = "2"

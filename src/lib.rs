@@ -26,11 +26,11 @@ use pinocchio::{
 };
 use pinocchio_pubkey::pubkey;
 use pinocchio_system::instructions::CreateAccount;
-use security_txt::security_txt;
+use solana_security_txt::security_txt;
 
 #[cfg(not(feature = "no-entrypoint"))]
 security_txt! {
-    name: "MoonValve",
+    name: "MoonValve Fair-Launch Escrow",
     project_url: "https://moonvalve.fun",
     contacts: "email:security@moonvalve.fun",
     policy: "https://moonvalve.fun/policy",
